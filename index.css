@@ -251,7 +251,7 @@ button:active .button-text {
 }
 .performance-bloc div{
   width: 100%;
-  height: 100px;
+  height: auto;
   color:#26303b;
   border: 1px solid #26303b ;
    
@@ -268,7 +268,7 @@ button:active .button-text {
   font-size: 20px;
   margin: 0px 5px;
 }
- 
+
 /* ____________Gallery section ________ */
 .gallery{
   margin:200px 0px;
@@ -289,7 +289,72 @@ div.scroll-container img {
   padding: 10px;
 }
 
+/* _________Technology section_________ */
+.techno{
+ margin: 0px 150px 100px 150px; 
+}
+.techno>h2{
+ font-family: "Boldonse", system-ui;
+ color: #26303b;
+ font-size: 30px;
+ margin-bottom: 50px;
+}
+.technology {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    
+     
+}
+.technology h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px; 
+    color: #26303b;
+}
+.technology p{
+    font-size: 20px; 
+    text-align: justify;
+    padding: 20px 20px;
+    color: white;
+}
+.technology p>span{
+  color: #26303b;
+  font-weight: bold;
+}
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    background-color: #748CA5;
+    border-radius:15px;
+}
 
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    background-color:rgb(76, 95, 115,0.7);
+    border-radius: 15px;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-row-start: 4;
+    background-color: rgb(46, 61, 78,0.3);
+     border-radius: 15px;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    background-color: #4E6F8F;
+    
+}
+        
 
  
 
