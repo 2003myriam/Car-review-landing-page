@@ -25,9 +25,10 @@ nav {
   position: fixed; 
   opacity: 0.8;
 }
-.nav-liste li {
+.nav-liste a,li {
   color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 nav img{
   width: 100px;
@@ -267,21 +268,29 @@ button:active .button-text {
   font-size: 20px;
   margin: 0px 5px;
 }
-#optionnal{
-font-size: 20px;
-margin: 30px 0px;
-text-align: center;
+ 
+/* ____________Gallery section ________ */
+.gallery{
+  margin:200px 0px;
+}
+.gallery h2{
+ margin: 30px 150px;
+ font-family: "Boldonse", system-ui;
+ color: #26303b;
+ font-size: 30px;
+}
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+div.scroll-container img {
+  padding: 10px;
 }
 
 
 
-
  
-  width: 150px;
-  height: 100px;
-  background-color: #26303b;
-  color: #fff;
-  border-radius: 5px;
-} */
 
 
