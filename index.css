@@ -4,7 +4,15 @@
   margin: 0px;
   padding: 0px;
 }
-.nav-liste {
+ 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* très important */
+}
+.nav-liste{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -13,12 +21,13 @@
   height: 70px;
   font-size: 20px;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 100%;
+  position: fixed; 
+  opacity: 0.8;
 }
 .nav-liste li {
   color: white;
   cursor: pointer;
-  padding: 10px 20px;
-  transition: color 0.3s ease;
 }
 nav img{
   width: 100px;
@@ -38,9 +47,12 @@ nav h1,span{
     display: block;  
     max-width: 100%; 
 }
+.hero-section {
+  position: relative;
+}
  
 .hero-section h1{
- position: fixed;
+ position: absolute;
  top: 150px;
  font-family: "Boldonse", system-ui;
  color: white;
@@ -49,7 +61,7 @@ nav h1,span{
 } 
 /* ________boutton__________ */
 .hero-section button {
-  position: fixed;
+  position: absolute;
   top: 550px;
   margin: 0px 100px;
   display: inline-block;
@@ -156,3 +168,58 @@ button:active .button-text {
   color: rgba(255, 255, 255, 0.459);
 }
 
+/* ___________design section_________ */
+.design{
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 300px);
+  margin: 50px 150px;
+  font-size: 30px;
+  gap: 15px;
+}
+.item-input{
+  grid-column:1;
+  grid-row: 1;
+}
+.item9{
+  grid-column-start:3;
+  grid-column-end:5;
+  grid-row-start:2;
+  grid-row-end: 2;
+}
+.item8{
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:2;
+  grid-row-end: 2;
+}
+.item7{
+  grid-column-start:2;
+  grid-column-end:4;
+  grid-row:3;
+}
+.item6{
+  grid-column-start:4;
+  grid-column-end:4;
+  grid-row-start:3;
+  grid-row-end:4;
+}
+.item5{
+  grid-column-start:1;
+  grid-column-end:3;
+  grid-row:4;
+}
+.item4{
+  grid-column-start:3;
+  grid-column-end:4;
+  grid-row:4;
+}
+.design h2{
+ font-family: "Boldonse", system-ui;
+ color: #26303b;
+ font-size: 40px;
+}
+.design p{
+  text-align: justify;
+}
+/* __________Performance section___________ */
