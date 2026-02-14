@@ -408,8 +408,9 @@ footer ul>a{
 }
  .footer-row2{
   display: flex;
-   padding: 100px 300px;
-   gap: 500px;
+   padding: 100px 120px;
+   gap: 150px;
+   
  }
  .footer-row2 p{
   font-size: 20px;
